@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Welcome to my new site!!!!"
+date:   2023-03-24 23:09:38 +0100
+categories: new site
+---
+
+Hey! Long time, no blog! Since the last time I did a blog I have gotten a custom built PC, an R720 server, some Cisco CCNA and probably more that i'm forgetting. I use Arch btw. Arch has surprisingly never broke for me yet. I have experienced some bugs but I dont think they are Arch's fault. Maybe people who break their Arch install's just have a massive skill issue. I don't really know what to write for this blog but I have some blog ideas. Let's all hope that I wont forget about my blog and never make another one. 
