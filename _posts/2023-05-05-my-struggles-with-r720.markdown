@@ -1,0 +1,10 @@
+---
+layout: post
+title: My struggle with my R720 server
+date: 2023-05-05 01:04
+categories: server
+---
+
+Well hello! Im gonna talk about my stuggle with my R720 server, it happened a while ago but if someone here is considering buying an R720 please read this to not do what I did. When I got my server I didnt check my firmware versions for the BIOS, iDrac, RAID controller etc but I really should have. The firmware versions were around 10 years old, not good. I was trying to use my private (for now) Synapse server and I realised it stopped working so I tried to SSH in, didnt work. So I tried to go to Proxmox and see what's happening over there but that didnt load either. I rebooted the server and it didnt boot up so I connected my moniter to it and, of course the RAID controller decided to just remove my drives from the "virtual disk". So I tried readding them and nothing happend. Remember when I said that I left the old firmware on the RAID controller right? Well that was my huge mistake.. Because issues like this were fixed in newer versions. Since the firmware was super old it was kinda weird to get up and fully up to date. The guys at the homelab discord (https://discord.gg/homelab), especially "Sir Ram" as he is nicknamed. He is a fucking god at iDrac shit so he helped me get stuff working. While doing the update procedure, iDrac decided to just stop loading so I had to reset the iDrac module. It was quite sad because I lost logs from 2013 that were still there when I bought it. Once my RAID controller was fully updated it still didnt import the "foreign array". What I then had to do was reset the RAID controller and then, POOF! It worked! Magically imported the arrays and booted up like nothing happend!
+
+TL:DR UPDATE YOUR R720 FIRMWARE OR ANY FIRMWARE OF ANY SERVER YOU GET!!
